@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="552.0" prefWidth="736.0" style="-fx-background-color: #333333;" xmlns="http://javafx.com/javafx/13" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ramirez.Teste.controller.TelaLoginController">
+   <children>
+      <ImageView fx:id="logoview" fitHeight="552.0" fitWidth="346.0" layoutX="390.0" layoutY="1.0" pickOnBounds="true">
+         <image>
+            <Image url="@Captura%20de%20tela%202023-11-15%20225214.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="labelusuario" layoutX="151.0" layoutY="127.0" text="Usuário:" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelsenha" layoutX="157.0" layoutY="234.0" text="Senha:" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtusuario" layoutX="30.0" layoutY="165.0" prefHeight="41.0" prefWidth="333.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="txtsenha" layoutX="32.0" layoutY="274.0" prefHeight="41.0" prefWidth="333.0" />
+      <CheckBox fx:id="checkbox" layoutX="33.0" layoutY="323.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="137.0" text="Mostrar Senha" textFill="WHITE" />
+      <Button fx:id="btnentrar" layoutX="103.0" layoutY="395.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="180.0" text="Entrar" />
+      <Label fx:id="userEror" layoutX="177.0" layoutY="177.0" />
+      <Label fx:id="passError" layoutX="176.0" layoutY="286.0" />
+   </children>
+</Pane>

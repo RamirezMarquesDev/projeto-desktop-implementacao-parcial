@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane fx:id="pane2" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="801.0" xmlns="http://javafx.com/javafx/13" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ramirez.Teste.controller.TelaPrincipalController">
+
+   <children>
+      <ImageView fx:id="planofundo" fitHeight="600.0" fitWidth="800.0" pickOnBounds="true">
+         <image>
+            <Image url="@Beer%20shop%20heaven%20in%20Bruges.jpg" />
+         </image>
+         <viewport>
+            <Rectangle2D minX="736.0" minY="552.0" />
+         </viewport>
+      </ImageView>
+      <MenuBar fx:id="menuBarTelaPrin" layoutX="-1.0" maxHeight="25.0" maxWidth="807.0" prefHeight="25.0" prefWidth="801.0">
+        <menus>
+          <Menu fx:id="menuProdutos" mnemonicParsing="false" text="Produtos">
+            <items>
+              <MenuItem fx:id="cadastrarProdutos" mnemonicParsing="false" text="Cadastrar Produtos" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Em Breve..">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Empty" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem fx:id="VideoAgradecimentos" mnemonicParsing="false" text="VideoAgradecimentos" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</Pane>
